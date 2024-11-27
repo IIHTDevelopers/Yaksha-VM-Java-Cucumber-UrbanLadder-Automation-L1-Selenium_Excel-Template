@@ -9,8 +9,8 @@ public class FooterPage extends StartupPage {
 		super(driver);
 	}
 
-	private By contactUsButton = By.xpath("//a[text()='Contact Us']");
-	private By contactUsHeading = By.xpath("(//div[@class='section-title-container']/span)[2]");
+	private By contactUsButton = By.xpath("");
+	private By contactUsHeading = By.xpath("");
 
 	public void clickOnContactUsLink() {
 		driver.findElement(contactUsButton).click();
