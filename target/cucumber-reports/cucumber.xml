@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="219.324" tests="10" skipped="0" failures="10" errors="0">
+<testcase classname="Verify Homepage Load" name="Verify that the homepage loads successfully." time="23.708">
+<failure type="java.lang.AssertionError" message="expected [true] but found [false]">
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at steps.HomePageStep.i_am_on_the_homepage_of_urban_ladder(HomePageStep.java:15)
+	at ✽.I am on the homepage of Urban Ladder.(file:///Users/abhisheksharma/Documents/YAKSHA/Selenium%20Projects%20Rework/Urban%20Ladder%20(Cucumber)/Templet/VM-Java-UrbanLadder-Automation-L1-Selenium_Excel-Template/src/test/java/features/01_Homepage.feature:4)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on the homepage of Urban Ladder..................................failed
+Then The page title should contain "Urban Ladder"...........................skipped
+]]></system-out>
+</testcase>
+<testcase classname="User Signup" name="Verify user can sign up successfully" time="15.807">
+<failure type="java.lang.AssertionError" message="expected [true] but found [false]">
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at steps.HomePageStep.i_am_on_the_homepage_of_urban_ladder(HomePageStep.java:15)
+	at ✽.I am on the homepage of Urban Ladder.(file:///Users/abhisheksharma/Documents/YAKSHA/Selenium%20Projects%20Rework/Urban%20Ladder%20(Cucumber)/Templet/VM-Java-UrbanLadder-Automation-L1-Selenium_Excel-Template/src/test/java/features/02_SignUp.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on the homepage of Urban Ladder..................................failed
+When Hover on the profile icon..............................................skipped
+And Click on the Sign Up button.............................................skipped
+And Complete the signup process with email and password "Testing1!".........skipped
+Then Verify My Account is visible...........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="User Signup" name="Verify user can LOG OUT successfully" time="14.318">
+<failure type="java.lang.AssertionError" message="expected [true] but found [false]">
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at steps.HomePageStep.i_am_on_the_homepage_of_urban_ladder(HomePageStep.java:15)
+	at ✽.I am on the homepage of Urban Ladder.(file:///Users/abhisheksharma/Documents/YAKSHA/Selenium%20Projects%20Rework/Urban%20Ladder%20(Cucumber)/Templet/VM-Java-UrbanLadder-Automation-L1-Selenium_Excel-Template/src/test/java/features/02_SignUp.feature:15)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on the homepage of Urban Ladder..................................failed
+When Hover on the profile icon..............................................skipped
+And Click on the Sign Up button.............................................skipped
+And Complete the signup process with email and password "Testing1!".........skipped
+Then Verify My Account is visible...........................................skipped
+And Click on logout button..................................................skipped
+Then Verify Login button is visible.........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify the search functionality with a valid product" time="14.852">
+<failure type="java.lang.AssertionError" message="expected [true] but found [false]">
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at steps.HomePageStep.i_am_on_the_homepage_of_urban_ladder(HomePageStep.java:15)
+	at ✽.I am on the homepage of Urban Ladder.(file:///Users/abhisheksharma/Documents/YAKSHA/Selenium%20Projects%20Rework/Urban%20Ladder%20(Cucumber)/Templet/VM-Java-UrbanLadder-Automation-L1-Selenium_Excel-Template/src/test/java/features/03_SearchPage.feature:11)
+]]>
+</failure>
+<system-out><![CDATA[
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Given I am on the homepage of Urban Ladder..................................failed
+When I search for "Sofa" from search bar....................................skipped
+Then The search results should display items related to "Sofa"..............skipped
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify that a product can be added to the wishlist." time="39.444">
+<failure type="org.openqa.selenium.InvalidSelectorException" message="invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c6b2bbd60fb2fbe0d634467216b84524, findElement {using=css selector, value= }]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59788}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59788/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c6b2bbd60fb2fbe0d634467216b84524">
+<![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c6b2bbd60fb2fbe0d634467216b84524, findElement {using=css selector, value= }]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59788}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59788/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c6b2bbd60fb2fbe0d634467216b84524
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.SearchPage.searchForProduct(SearchPage.java:34)
+	at steps.SearchPageStep.i_search_for_from_search_bar(SearchPageStep.java:15)
+	at ✽.I search for "Table" from search bar(file:///Users/abhisheksharma/Documents/YAKSHA/Selenium%20Projects%20Rework/Urban%20Ladder%20(Cucumber)/Templet/VM-Java-UrbanLadder-Automation-L1-Selenium_Excel-Template/src/test/java/features/03_SearchPage.feature:16)
+]]>
+</failure>
+<system-out><![CDATA[
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Given I search for "Table" from search bar..................................failed
+When Add the first product in the search results to the wishlist............skipped
+Then The product should be added to the wishlist successfully...............skipped
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify that the product details page opens." time="15.215">
+<failure type="java.lang.AssertionError" message="expected [true] but found [false]">
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at steps.HomePageStep.i_am_on_the_homepage_of_urban_ladder(HomePageStep.java:15)
+	at ✽.I am on the homepage of Urban Ladder.(file:///Users/abhisheksharma/Documents/YAKSHA/Selenium%20Projects%20Rework/Urban%20Ladder%20(Cucumber)/Templet/VM-Java-UrbanLadder-Automation-L1-Selenium_Excel-Template/src/test/java/features/03_SearchPage.feature:21)
+]]>
+</failure>
+<system-out><![CDATA[
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Given I am on the homepage of Urban Ladder..................................failed
+When I search for "Chairs" from search bar..................................skipped
+When Click on view product button from the search results...................skipped
+Then The product details page should open with the correct product information.skipped
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify that price filters work correctly." time="13.149">
+<failure type="java.lang.AssertionError" message="expected [true] but found [false]">
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at steps.HomePageStep.i_am_on_the_homepage_of_urban_ladder(HomePageStep.java:15)
+	at ✽.I am on the homepage of Urban Ladder.(file:///Users/abhisheksharma/Documents/YAKSHA/Selenium%20Projects%20Rework/Urban%20Ladder%20(Cucumber)/Templet/VM-Java-UrbanLadder-Automation-L1-Selenium_Excel-Template/src/test/java/features/03_SearchPage.feature:27)
+]]>
+</failure>
+<system-out><![CDATA[
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Given I am on the homepage of Urban Ladder..................................failed
+When I search for "Sofa" from search bar....................................skipped
+When Apply a price filter...................................................skipped
+Then All displayed products should fall within the selected price range.....skipped
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify product details in the wishlist." time="33.925">
+<failure type="org.openqa.selenium.InvalidSelectorException" message="invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [51150aa56ea8845f1f8c569e3190ed1b, findElement {using=css selector, value= }]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59932}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59932/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 51150aa56ea8845f1f8c569e3190ed1b">
+<![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [51150aa56ea8845f1f8c569e3190ed1b, findElement {using=css selector, value= }]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59932}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59932/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 51150aa56ea8845f1f8c569e3190ed1b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.SearchPage.searchForProduct(SearchPage.java:34)
+	at steps.SearchPageStep.i_search_for_from_search_bar(SearchPageStep.java:15)
+	at ✽.I search for "Table" from search bar(file:///Users/abhisheksharma/Documents/YAKSHA/Selenium%20Projects%20Rework/Urban%20Ladder%20(Cucumber)/Templet/VM-Java-UrbanLadder-Automation-L1-Selenium_Excel-Template/src/test/java/features/03_SearchPage.feature:33)
+]]>
+</failure>
+<system-out><![CDATA[
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Given I search for "Table" from search bar..................................failed
+When Add the first product in the search results to the wishlist............skipped
+Then Verify the product details in wishlist Page............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify product can be added to compare section." time="34.521">
+<failure type="org.openqa.selenium.InvalidSelectorException" message="invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [559f07665df569b4c525c3ea6383263a, findElement {using=css selector, value= }]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59989}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59989/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 559f07665df569b4c525c3ea6383263a">
+<![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [559f07665df569b4c525c3ea6383263a, findElement {using=css selector, value= }]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59989}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59989/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 559f07665df569b4c525c3ea6383263a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.SearchPage.searchForProduct(SearchPage.java:34)
+	at steps.SearchPageStep.i_search_for_from_search_bar(SearchPageStep.java:15)
+	at ✽.I search for "Dining" from search bar(file:///Users/abhisheksharma/Documents/YAKSHA/Selenium%20Projects%20Rework/Urban%20Ladder%20(Cucumber)/Templet/VM-Java-UrbanLadder-Automation-L1-Selenium_Excel-Template/src/test/java/features/03_SearchPage.feature:38)
+]]>
+</failure>
+<system-out><![CDATA[
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Given I search for "Dining" from search bar.................................failed
+When Add the first product to compare section...............................skipped
+Then Verify the product is added to product compare section.................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Footer functionality" name="Verify the functionality of footer links." time="13.665">
+<failure type="java.lang.AssertionError" message="expected [true] but found [false]">
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at steps.HomePageStep.i_am_on_the_homepage_of_urban_ladder(HomePageStep.java:15)
+	at ✽.I am on the homepage of Urban Ladder.(file:///Users/abhisheksharma/Documents/YAKSHA/Selenium%20Projects%20Rework/Urban%20Ladder%20(Cucumber)/Templet/VM-Java-UrbanLadder-Automation-L1-Selenium_Excel-Template/src/test/java/features/04_FooterLinks.feature:4)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on the homepage of Urban Ladder..................................failed
+When Click on the Contact Us link in the footer.............................skipped
+Then The Contact Us page should open with relevant information..............skipped
+]]></system-out>
+</testcase>
+</testsuite>
