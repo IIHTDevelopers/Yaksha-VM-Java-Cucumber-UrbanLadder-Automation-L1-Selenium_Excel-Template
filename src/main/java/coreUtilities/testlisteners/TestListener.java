@@ -33,16 +33,23 @@ public class TestListener implements ITestListener
     }
  
     public synchronized void onTestStart(ITestResult result) {
-        System.out.println((result.getMethod().getMethodName() + " started!"));
-        ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(),result.getMethod().getDescription());
+    	//String scenarioName = (String) result.getAttribute("scenarioName");
+        System.out.println((result.getMethod().getMethodName()+ " started!"));
+        //scenarioName.replaceAll(" ", "");
+        ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(), result.getMethod().getDescription());
         test.set(extentTest);
     }
  
     public synchronized void onTestSuccess(ITestResult result) {
-       System.out.println((result.getMethod().getMethodName() + " passed!"));
-        test.get().pass("Test passed");
+    	String scenarioName = (String) result.getAttribute("scenarioName");
+    	String name = scenarioName.replaceAll(" ", "");
+       System.out.println((name + " passed!"));
+      // System.out.println("Scenario Name: " + scenarioName);
+       test.get().pass("Test passed");
         try {
-            yakshaAssert(result.getMethod().getMethodName(), true, businessTestFile);
+        	//System.out.println(result.getTestContext().getName());
+        	
+            yakshaAssert(name, true, businessTestFile);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -50,10 +57,12 @@ public class TestListener implements ITestListener
     }
  
     public synchronized void onTestFailure(ITestResult result) {
-        System.out.println((result.getMethod().getMethodName() + " failed!"));
+    	String scenarioName = (String) result.getAttribute("scenarioName");
+    	String name = scenarioName.replaceAll(" ", "");
+       System.out.println((name + " failed"));
         System.out.println(result.getThrowable().toString());
         try {
-            yakshaAssert(result.getMethod().getMethodName(), false, businessTestFile);
+            yakshaAssert(name, false, businessTestFile);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -62,9 +71,12 @@ public class TestListener implements ITestListener
     }
  
     public synchronized void onTestSkipped(ITestResult result) {
-        System.out.println((result.getMethod().getMethodName() + " skipped!"));
+    	String scenarioName = (String) result.getAttribute("scenarioName");
+    	String name = scenarioName.replaceAll(" ", "");
+       System.out.println((name + " skipped!"));
+        
         try {
-            yakshaAssert(result.getMethod().getMethodName(), false, businessTestFile);
+            yakshaAssert(name, false, businessTestFile);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -73,7 +85,10 @@ public class TestListener implements ITestListener
     }
  
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-        System.out.println(("onTestFailedButWithinSuccessPercentage for " + result.getMethod().getMethodName()));
+    	String scenarioName = (String) result.getAttribute("scenarioName");
+    	String  name = scenarioName.replaceAll(" ", "");
+       
+        System.out.println(("onTestFailedButWithinSuccessPercentage for " + name));
     }	
 
 }
