@@ -3,10 +3,16 @@ package runner;
 import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+
 import coreUtilities.testbase.TestBase;
 import coreUtilities.utils.FileOperations;
 import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
+import io.cucumber.java.BeforeAll;
+import io.cucumber.java.Scenario;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
@@ -33,7 +39,14 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 		driver = testbase.initialize(configData);
 
 	}
-
+	
+	@Before
+    public void beforeScenario(Scenario scenario) {
+        String scenarioName = scenario.getName();
+        ITestResult testResult = Reporter.getCurrentTestResult(); // Get the current test result from TestNG
+        testResult.setAttribute("scenarioName", scenarioName);
+    }
+	
 	@After(order = 0)
 	public void tearDown() {
 		testbase.browserTearDown();
