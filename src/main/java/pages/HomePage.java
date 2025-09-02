@@ -12,12 +12,24 @@ public class HomePage extends StartupPage {
 
 	private By homePageLogo = By.className("header__topBar_logo");
 
+	/**
+	 * Verifies if the homepage logo is displayed.
+	 * Uses exception handling to prevent test failure if the element is not found.
+	 *
+	 * @return true if the homepage logo is displayed, false otherwise.
+	 */
 	public boolean verifyHomePageLogo() {	
 		//write your logic here
 		
 		return false;
 	}
 
+	/**
+	 * Retrieves the title of the homepage.
+	 * Uses exception handling to avoid failure in case the title cannot be fetched.
+	 *
+	 * @return The title of the homepage as a String.
+	 */
 	public String getTitleOfHomePage() {
 		String title = "";
 		//write your logic here
